@@ -1,0 +1,17 @@
+https://www.katacoda.com/courses/docker-production
+
+https://github.com/BenHall/docker-elk
+
+Step 1 - Start Elasticsearch
+Task
+
+Launch Elasticsearch with the following command
+
+docker run -d \
+  -p 9200:9200 \
+  -p 9300:9300 \
+  --name elk_es \
+  -e LOGSPOUT=ignore \
+  elasticsearch:1.5.2
+
+
